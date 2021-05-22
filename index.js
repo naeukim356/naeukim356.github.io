@@ -1,5 +1,7 @@
 window.onload = function () {
-    var desc = ["설명", "Hi", "hehe"];
+    var desc = [document.getElementById('book1_desc').innerText, "to the stars",
+    "hi everyone",
+    "I hope you have a nice day"];
 var index = 0;
 
 var interval = setInterval(function() {

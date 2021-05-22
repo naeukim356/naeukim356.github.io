@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+    <title>my portfolio</title>
 </head>
 
 <body>
@@ -24,12 +26,11 @@
                 <img src="img/profile.jpg" alt="profile_pic" width="400px">
             </div>
             <div class="contents">
-                <h1> 김나은 </h1>
-                <p>hi everyone</p>
+                <h1>hi everyone</h1>
                 <p>I hope you have a nice day</p>
             <div class="page">
                 <div class="text">
-                    <p id="book1_desc"> 설명</p>
+                    <p id="book1_desc">to the stars</p>
                 </div>
                 <div class="arrow">
                     <img src="img/next.svg" alt="left" id="left-arrow">
@@ -39,6 +40,45 @@
         </div>
     </div>
 </div>
+    <div class="card" id="book2">
+        <div class="wrapper">
+            <div class="title">
+                <h1> Therefore I am</h1>
+            </div>
+        <div class="card-container">
+            <div class="card-history">
+                <img src="img/temp.jpg" alt="history_pic">
+                <div class="text-box">
+                    <h2>title</h2>
+                    <p>Description</p>
+                </div>
+                <a href="modal/history1.html" rel="modal:open">
+                    <button>자세히 보기</button>
+                </a>
+            </div>
+            <div class="card-history">
+                <img src="img/temp.jpg" alt="history_pic">
+                <div class="text-box">
+                    <h2>title</h2>
+                    <p>Description</p>
+                </div>
+                <a href="modal/history1.html" rel="modal:open">
+                    <button>자세히 보기</button>
+                </a>
+            </div>
+            <div class="card-history">
+                <img src="img/temp.jpg" alt="history_pic">
+                    <div class="text-box">
+                        <h2>title</h2>
+                        <p>Description</p>
+                    </div>
+                    <a href="modal/history1.html" rel="modal:open">
+                        <button>자세히 보기</button>
+                    </a>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 
 </html>
