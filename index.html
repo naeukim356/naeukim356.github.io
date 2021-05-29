@@ -16,9 +16,9 @@
 <body>
     <div class="navigation">
         <img src="img/icon.svg" alt="logoicon">
-        <button>INSTAGRAM</button>
-        <button>GITHUB</button>
-        <button>BLOG</button>
+        <a href="https://www.instagram.com/thoyeon_/"><button>INSTAGRAM</button></a>
+        <a href="https://github.com/thohohong"><button>GITHUB</button></a>
+        <a href="https://blog.naver.com/thohohong"><button>BLOG</button></a>
     </div>
     <div class="card" id="book1">
         <div class="wrapper">
@@ -28,46 +28,26 @@
             <div class="contents">
                 <h1>hi everyone</h1>
                 <p>I hope you have a nice day</p>
-            <div class="page">
-                <div class="text">
-                    <p id="book1_desc">to the stars</p>
-                </div>
-                <div class="arrow">
-                    <img src="img/next.svg" alt="left" id="left-arrow">
-                    <img src="img/next.svg" alt="right" id="right-arrow">
+                <div class="page">
+                    <div class="text">
+                        <p id="book1_desc">to the stars</p>
+                    </div>
+                    <div class="arrow">
+                        <img src="img/next.svg" alt="left" id="left-arrow">
+                        <img src="img/next.svg" alt="right" id="right-arrow">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <div class="card" id="book2">
         <div class="wrapper">
             <div class="title">
                 <h1> Therefore I am</h1>
             </div>
-        <div class="card-container">
-            <div class="card-history">
-                <img src="img/temp.jpg" alt="history_pic">
-                <div class="text-box">
-                    <h2>title</h2>
-                    <p>Description</p>
-                </div>
-                <a href="modal/history1.html" rel="modal:open">
-                    <button>자세히 보기</button>
-                </a>
-            </div>
-            <div class="card-history">
-                <img src="img/temp.jpg" alt="history_pic">
-                <div class="text-box">
-                    <h2>title</h2>
-                    <p>Description</p>
-                </div>
-                <a href="modal/history1.html" rel="modal:open">
-                    <button>자세히 보기</button>
-                </a>
-            </div>
-            <div class="card-history">
-                <img src="img/temp.jpg" alt="history_pic">
+            <div class="card-container">
+                <div class="card-history">
+                    <img src="img/temp.jpg" alt="history_pic">
                     <div class="text-box">
                         <h2>title</h2>
                         <p>Description</p>
@@ -75,10 +55,108 @@
                     <a href="modal/history1.html" rel="modal:open">
                         <button>자세히 보기</button>
                     </a>
+                </div>
+                <div class="card-history">
+                    <img src="img/temp.jpg" alt="history_pic">
+                    <div class="text-box">
+                        <h2>title</h2>
+                        <p>Description</p>
+                    </div>
+                    <a href="modal/history1.html" rel="modal:open">
+                        <button>자세히 보기</button>
+                    </a>
+                </div>
+                <div class="card-history">
+                    <img src="img/temp.jpg" alt="history_pic">
+                    <div class="text-box">
+                        <h2>title</h2>
+                        <p>Description</p>
+                    </div>
+                    <a href="modal/history1.html" rel="modal:open">
+                        <button>자세히 보기</button>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
+</body>
+<div class="card" id="book3">
+    <div class="wrapper">
+        <div class="title">
+            <h1>Title</h1>
+        </div>
+        <div class="article-container">
+            <div class="article">
+                <div class="article-img-container">
+                    <img src="img/temp.jpg" alt="article_pic">
+                </div>
+                <div class="article-desc-container">
+                    <div class="text-box">
+                        <h2 id="article-title1">
+                            <script>
+                                $(function () {
+                                    $.get('article/article1.html', function (result) {
+                                        var obj = $(result).find('h1');
+                                        document.getElementById("article-title1").innerText = obj
+                                            .html();
+                                    });
+                                });
+                            </script>title
+                        </h2>
+                        <p id="article-desc1" class="article-desc">
+                            <script>
+                                $(function () {
+                                    $.get('article/article1.html', function (result) {
+                                        var obj = $(result).find('p');
+                                        document.getElementById("article-desc1").innerText = obj.html()
+                                            .substr(0, 550) + "...";
+                                    });
+                                });
+                            </script>
+                        </p>
+                    </div>
+                    <a href="article/article1.html">
+                    <button>자세히 보기</button>
+                    </a>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-img-container">
+                    <img src="img/temp.jpg" alt="article_pic">
+                </div>
+                <div class="article-desc-container">
+                    <div class="text-box">
+                        <h2 id="article-title2">
+                            <script>
+                                $(function () {
+                                    $.get('article/article2.html', function (result) {
+                                        var obj = $(result).find('h1');
+                                        document.getElementById("article-title2").innerText = obj
+                                            .html();
+                                    });
+                                });
+                            </script>title
+                        </h2>
+                        <p id="article-desc2" class="article-desc">
+                            <script>
+                                $(function () {
+                                    $.get('article/article1.html', function (result) {
+                                        var obj = $(result).find('p');
+                                        document.getElementById("article-desc2").innerText = obj.html()
+                                            .substr(0, 550) + "...";
+                                    });
+                                });
+                            </script>Description
+                        </p>
+                    </div>
+                    <a href="article/article2.html">
+                    <button>자세히 보기</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
